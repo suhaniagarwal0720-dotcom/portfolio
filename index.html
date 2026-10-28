@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suhani Agarwal: Your Name — Personal Profile</title>
+    <title>Suhani Agarwal</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css">
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <p class="logo">Suhani Agarwal: Your Name</p>
+        <p class="logo">Suhani Agarwal</p>
         <button
           class="nav-toggle"
           type="button"
@@ -55,11 +56,11 @@
       <section id="skills" class="panel">
         <h2>Skills</h2>
         <ul class="skills-list">
-          <li>Aurduino CarRobot: Skill one (for example HTML)</li>
-          <li>HTML,CSS,JAVAscript: Skill two (for example CSS)</li>
-          <li>Coding probmlems solved: Skill three (for example JavaScript)</li>
-          <li>Problem solving: Skill four (for example Git)</li>
-          <li>python: Skill five (for example React)</li>
+          <li>Aurduino CarRobot</li>
+          <li>HTML,CSS,JAVAscript</li>
+          <li>Coding probmlems solved:</li>
+          <li>Problem solving</li>
+          <li>python</li>
         </ul>
       </section>
 
@@ -141,5 +142,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <section id="portfolio-chatbot" class="chatbot-section">
+      <h2>Ask My Portfolio Chatbot</h2>
+      <p>Ask a question and get a response from the AI.</p>
+      <div id="chatMessages" class="chat-messages" aria-live="polite">
+      <p class="bot-message">Hello! Ask me something about this portfolio.</p>
+      </div>
+      <form id="chatForm" class="chat-form">
+      <input id="chatInput" type="text" placeholder="Type your question" required>
+      <button id="chatSend" type="submit">Send</button>
+      </form>
+      <p id="chatStatus" aria-live="polite"></p>
+      </section>
+      <script src="config.js"></script>
+<script src="chatbot.js"></script>
   </body>
 </html>
