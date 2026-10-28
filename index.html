@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suhani Agarwal: Your Name — Personal Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="logo">Suhani Agarwal: Your Name</p>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menu
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" type="button">Switch to Dark Mode</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-heading">
+        <p class="eyebrow">Personal profile</p>
+        <h1 id="page-heading">Suhani Agarwal: Your Name</h1>
+        <p class="tagline">
+         Fronetend engineer: A short tagline about your role, for example Frontend
+          Developer or Computer Science student.
+        </p>
+      </section>
+
+      <section id="about" class="panel">
+        <h2>About</h2>
+        <p>
+          Myself Suhani Agarwal . I completed my schooling from Meerut . I worked on some basic projects like car aurduin robot using aurduino board and some coding problems solved: Write a short introduction here. Mention who you are,
+          what you study or work on, and what you care about building.
+        </p>
+        <p>
+          Live in meerut,india: Add a second paragraph with location, interests, or
+          current goals. Example: Based in City, Country. Open to internships
+          and collaboration.
+        </p>
+      </section>
+
+      <section id="skills" class="panel">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Aurduino CarRobot: Skill one (for example HTML)</li>
+          <li>HTML,CSS,JAVAscript: Skill two (for example CSS)</li>
+          <li>Coding probmlems solved: Skill three (for example JavaScript)</li>
+          <li>Problem solving: Skill four (for example Git)</li>
+          <li>python: Skill five (for example React)</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="panel">
+        <h2>Projects</h2>
+        <div class="project-toolbar">
+          <label class="project-search-label" for="project-search">
+            Search projects
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Search by name or technology"
+              autocomplete="off"
+            />
+          </label>
+          <div
+            id="tech-filters"
+            class="tech-filters"
+            role="group"
+            aria-label="Filter by technology"
+          ></div>
+        </div>
+        <p id="project-filter-status" class="filter-status" aria-live="polite"></p>
+        <ul class="projects-list">
+          <li data-name="Basics Python Programs" data-tech="Python">
+            <a href="https://example.com/placeholder-project-one" rel="noopener noreferrer">
+              Basics Python Programs: Project One Title
+            </a>
+            <p>
+              Coding problems solved using Python: One-sentence description of project one and the
+              problem it solves.
+            </p>
+            <p class="tech-tags" aria-label="Technologies">
+              <span>Python</span>
+            </p>
+          </li>
+          <li data-name="Buggy Python Code" data-tech="Python">
+            <a href="https://example.com/placeholder-project-two" rel="noopener noreferrer">
+              : Project Two Title
+            </a>
+            <p>
+              Buggy python code Buggy Python code is a program that contains errors or mistakes, called bugs. Because of these bugs, the program may give the wrong output, stop running, or behave differently from what we expect.: One-sentence description of project two and the
+              technologies used.
+            </p>
+            <p class="tech-tags" aria-label="Technologies">
+              <span>Python</span>
+            </p>
+          </li>
+          <li data-name="Reading list app" data-tech="HTML, CSS, JavaScript">
+            <a href="https://example.com/placeholder-project-three" rel="noopener noreferrer">
+          Reading list app: Project Three Title
+            </a>
+            <p>
+              The app allows users to add books to their reading list, view the saved books, update their reading status, and remove books when they are no longer needed. It provides an easy way to manage a personal reading list instead of remembering everything manually.
+
+              While developing this project, I learned how to work with user input, data storage, functions, and basic application logic. I also understood how different parts of a program work together to create a useful application.
+              
+              This project helped me improve my problem-solving, coding, debugging, and logical thinking skills. In the future, I would like to add more features such as book categories, ratings, search options, and reading progress tracking.: One-sentence description of project three and your
+              role on the team.
+            </p>
+            <p class="tech-tags" aria-label="Technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+          </li>
+        </ul>
+        <p id="project-empty" class="project-empty" hidden>
+          No projects match that name or technology.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> SUHANI AGARWAL: Your Name. Built as a personal
+        profile page.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
